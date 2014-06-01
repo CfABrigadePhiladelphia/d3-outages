@@ -19,8 +19,8 @@ function renderOutageChart(outages) {
 //        dateStart = d3.min(outages, function(d) { return d.outageStart; }),
 //        blockNames = ['morning', 'workday', 'evening'];
 //        blockNames = ["12p", "1a", "2a", "3a", "4a", "5a", "6a", "7a", "8a", "9a", "10a", "11a", "12a", "1p", "2p", "3p", "4p", "5p", "6p", "7p", "8p", "9p", "10p", "11p"];
-        blockNames = ["12p", "2a", "4a", "6a", "8a", "10a", "12a", "2p", "4p", "6p", "8p", "10p"];
-//        blockNames = ["12p", "4a", "8a", "12a", "4p", "8p"];
+//        blockNames = ["12p", "2a", "4a", "6a", "8a", "10a", "12a", "2p", "4p", "6p", "8p", "10p"];
+        blockNames = ["12p", "4a", "8a", "12a", "4p", "8p"];
         
     var days = _buildDaysList(dateStart, dateEnd),
         blocksPerDay = blockNames.length,
